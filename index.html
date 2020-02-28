@@ -29,7 +29,8 @@
     <!-- <script src="https://ce.lennertderyck.be/library/elements.js"></script> -->
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
     <script src="https://unpkg.com/feather-icons"></script>
-    
+    <link href="https://fonts.googleapis.com/css?family=Hepta+Slab:400,500,600,700|Source+Sans+Pro:400,600,700&display=swap" rel="stylesheet">
+
     <!-- local assets -->
     <link rel="stylesheet" href="./static/css/main.min.css">
 </head>
@@ -37,50 +38,22 @@
     <header>
         <div class="container">
             <div class="intro">
-                <h1>Header</h1>
-                <p><strong>Starting template</strong></p>
+                <h1>Date calculator</h1>
+                <p><strong>Calculate difference between two dates</strong></p>
             </div>
         </div>
     </header>
     <main>
-        <section class="container">
-            <p>This template includes:</p>
-            <ul data-sesam-group="assets">
-                <li data-sesam-trigger="html" data-sesam-parent="assets"><strong><i data-feather="arrow-right"></i>index.html</strong>
-                    <ul data-sesam-target="html"  data-sesam-parent="assets">
-                        <li>All basic header stuff</li>
-                        <li>Meta tags
-                            <ul>
-                                <li>Responsiveness</li>
-                                <li>Favicon</li>
-                                <li>SEO description and tags</li>
-                                <li><a href="https://ogp.me/" target="_blank">Open Graph</a></li>
-                            </ul>
-                        </li>
-                        <li>All Bootstrap assets (comments)</li>
-                    </ul>
-                </li>
-                <li data-sesam-trigger="css" data-sesam-parent="assets"><strong><i data-feather="arrow-right"></i>CSS</strong> (<a href="https://sass-lang.com/" target="_blank" rel="noopener">Sass</a>)
-                    <ul data-sesam-target="css"  data-sesam-parent="assets">
-                        <li>_base.scss</li>
-                        <li>_sesam.scss</li>
-                        <li>_typography.scss</li>
-                        <li>main.scss: links all scss files and outputs one regular css file</li>
-                    </ul>
-                </li>
-                <li data-sesam-trigger="js" data-sesam-parent="assets"><strong><i data-feather="arrow-right"></i>JavaScript</strong>
-                    <ul data-sesam-target="js"  data-sesam-parent="assets">
-                        <li>main.js</li>
-                        <li>sesam.js: collapse stuff [beta] (the collapse you see on this page)</li>
-                    </ul>
-                </li>
-            </ul>
-            
-        </section>
+        <div class="container">
+            <input type="date" value="" name="startDate" id="startDate">
+            <input type="date" value="" name="endDate" id="endDate">
+            <button id="calc">calculate</button>
+            <small id="error" style="display: none;">Fill in two valid dates</small>
+            <h3 id="diffOutput"></h3>
+        </div>
     </main>
     <footer>
         <div class="container">
-            <small><strong>Footer</strong> &nbsp; | &nbsp; Template created by <a href="https://github.com/lennertderyck" target="_blank" rel="noopener">lennertderyck</a> – use this template on <a href="https://github.com/lennertderyck/start-template/generate" target="_blank" rel="noopener">GitHub</a></small>
         </div>
     </footer>
 

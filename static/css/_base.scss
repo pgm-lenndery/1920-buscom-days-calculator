@@ -2,10 +2,20 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Source Sans Pro';
 }
 
 body {
     padding: 35px 0;
+}
+
+header {
+    margin-bottom: 30px;
+
+    
+    h1 {
+        font-family: 'Hepta Slab', ;
+    }
 }
 
 footer {
@@ -16,4 +26,14 @@ footer {
     margin: 0 auto;
     max-width: 900px;
     padding: 0 25px;
+}
+
+#error {
+    display: block;
+    margin-top: 20px;
+    color: red;
+}
+
+#diffOutput {
+    margin-top: 30px;
 }
